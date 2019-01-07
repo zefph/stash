@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+    </style>
+  </head>
+  <body>
+    <h3><bold>stash</bold></h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+    <script>
+// Initialize and add the map
+function initMap() {
+  // The location of la Zone du Dehors
+  var laZone = {lat: 44.835162, lng: -0.569315};
+  // The map, centered at la Zone du Dehors
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 15, center: laZone});
+  // The marker, positioned at la Zone du Dehors
+  var marker = new google.maps.Marker({position: laZone, map: map});
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDV0Pfm_J4_pEmWxnTAmzJiyXG-eOyjUs8&callback=initMap">
+    </script>
+  </body>
+</html>
