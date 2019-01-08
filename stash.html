@@ -1,32 +1,54 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-      /* Set the size of the div element that contains the map */
-      #map {
-        height: 400px;  /* The height is 400 pixels */
-        width: 100%;  /* The width is the width of the web page */
-       }
-    </style>
+  	<link rel="stylesheet" type="text/css" href="style.css"/>
+  	<link rel="icon" type="image/png" href="https://res.cloudinary.com/decbnidmq/image/upload/v1546955806/stach.png" />
+  	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   </head>
   <body>
-    <h3><bold>stash</bold></h3>
-    <!--The div element for the map -->
-    <div id="map"></div>
-    <script>
-// Initialize and add the map
-function initMap() {
-  // The location of la Zone du Dehors
-  var laZone = {lat: 44.835162, lng: -0.569315};
-  // The map, centered at la Zone du Dehors
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 15, center: laZone});
-  // The marker, positioned at la Zone du Dehors
-  var marker = new google.maps.Marker({position: laZone, map: map});
-}
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDV0Pfm_J4_pEmWxnTAmzJiyXG-eOyjUs8&callback=initMap">
-    </script>
+
+
+		
+
+      <div id="conteneur">
+
+    	<div class="panneaugauche">	
+			<div class="logo"><img src="stach.png"></div>
+			<div class="baseline">
+	    				<p>"Faîtes vos réserves de lecture"</p>
+	    	</div>
+
+	    		<div class="recherche">
+	    			<div class="texterecherche">
+	    				<p>Rechercher une librairie...</p>
+	    			</div>
+	    		</div>
+	    	
+	    	<div class="petitpanneau"></div>
+    		
+
+    	</div>
+    	<div class="panneaudroite">
+
+			<!--The div element for the map -->
+			<div id="map"></div>
+			<script>
+			// Initialize and add the map
+			function initMap() {
+			// The location of la Zone du Dehors
+			var laZone = {lat: 44.835162, lng: -0.569315};
+			// The map, centered at la Zone du Dehors
+			var map = new google.maps.Map(
+			  document.getElementById('map'), {zoom: 15, center: laZone});
+			// The marker, positioned at la Zone du Dehors
+			var marker = new google.maps.Marker({position: laZone, map: map});
+			}
+			</script>
+			<script async defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDV0Pfm_J4_pEmWxnTAmzJiyXG-eOyjUs8&callback=initMap">
+			</script>
+		</div>
+   </div>
+
   </body>
 </html>
