@@ -1,84 +1,127 @@
-<!DOCTYPE html>
+<!--
+  Copyright 2017 Google Inc.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
 <html>
 <head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style.css"/>
-	<link rel="icon" type="image/png" href="https://res.cloudinary.com/decbnidmq/image/upload/v1546955806/stach.png" />
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
-	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <link rel="icon" type="image/png" href="https://res.cloudinary.com/decbnidmq/image/upload/v1546955806/stash.png" />
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
-</head>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+  <title>STASH</title>
+
+  <style>
+    .map {height: 100%;}
+    html, body {height: 100%; margin: 0; padding: 0;}
+  </style>
+
+<head>
+
 <body>
 
-	<img id="hider" src="fermer.png">		   
-    <img id="shower" src="ouvrir.png">
+  <img id="hider" src="fermer.png">      
+  <img id="shower" src="ouvrir.png">
 
-		<div id="conteneur">
+  <div id="conteneur">
 			<span id="panneaugauche">		
 
 	     
 
-				<div class="logo"><img src="stach.png"></div>
-				<div class="baseline">
-				<p>"Faîtes vos réserves de lecture"</p>
-				</div>
+				<div class="logo"><img src="stash.png"></div>
+				
 
 				<div class="recherche">
-				<div class="texterecherche">
-				<p>Rechercher une librairie...</p>
-				</div>
+				
+				<p>Rechercher une librairie ...</p>
+        <img src="loupe.png">
+				
 				</div>
 
-				<div class="petitpanneau">
+				<div class="petitpanneau" style="height:410px!important;" >
 					
+				    <div class="texte"><p><b>Où avez vous envie <br> de vous évader aujourd'hui ?</b></p></div>
+				    
+				    <br>
+				    <div class="trierpar"><p>Trier par : </p></div>
+		            <div class="tri1"> <p><b>GENRE</b></p> <img src="bas.png"></div>
+		           
+		            <br>
+		            <div class="tri2"><p><b>HORAIRES D'OUVERTURE</b></p><img src="bas.png"></div>
+		           
+		            <br>
+		            <div class="tri3"><p><b>AUTRE</b></p><img src="bas.png"></div>
+		           
+		            <br>
+		         
+		          <a href="fiche.html"><div class="trier">
+		            <p>Trouver une librairie</p>
+		          </div><a>
+
 				</div>
 			</span>
 
+    <script>
 
-				<script>
-				$( "#hider" ).click(function() {
-				  $( "#panneaugauche" ).hide( "fast", function() {
-				    // Use arguments.callee so we don't need a named function
-				    $( this ).prev().hide( "fast" );
-				  });
-				});
-				$( "#shower" ).click(function() {
-				  $( "#panneaugauche" ).show( "fast" );
-				});
+        $( "#hider" ).click(function() {
+          $( "#panneaugauche" ).hide( "fast", function() {
+            // Use arguments.callee so we don't need a named function
+            $( this ).prev().hide( "fast" );
+          });
+        });
+        $( "#shower" ).click(function() {
+          $( "#panneaugauche" ).show( "fast" );
+        });
 
-			</script>
+    </script>
 
-				
+    <div class="panneaudroite">
 
+          <!--The div element for the map -->
+          <div id="map"></div>
+          <script>
+          // Initialize and add the map
+          function initMap() {
+          // The location of la Zone du Dehors
+          var laZone = {lat: 44.835162, lng: -0.569315};
+          // The map, centered at la Zone du Dehors
+          var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 15, center: laZone});
+          // The marker, positioned at la Zone du Dehors
+          var marker = new google.maps.Marker({position: laZone, map: map});
+          }
+          </script>
 
-		    	<div class="panneaudroite">
+          <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDV0Pfm_J4_pEmWxnTAmzJiyXG-eOyjUs8&callback=initMap">
+          </script>
 
-					<!--The div element for the map -->
-					<div id="map"></div>
-					<script>
-					// Initialize and add the map
-					function initMap() {
-					// The location of la Zone du Dehors
-					var laZone = {lat: 44.835162, lng: -0.569315};
-					// The map, centered at la Zone du Dehors
-					var map = new google.maps.Map(
-					  document.getElementById('map'), {zoom: 15, center: laZone});
-					// The marker, positioned at la Zone du Dehors
-					var marker = new google.maps.Marker({position: laZone, map: map});
-					}
-					</script>
+    </div>
+     
+    </div>
 
-					<script async defer
-					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDV0Pfm_J4_pEmWxnTAmzJiyXG-eOyjUs8&callback=initMap">
-					</script>
+  <!--
+  <div class="map"></div>
 
-				</div>
-		 
-		</div>
+  <script src="app.js"></script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDV0Pfm_J4_pEmWxnTAmzJiyXG-eOyjUs8&callback=initMap">
+  </script>
+-->
 
-		 
-
-
-  </body>
+</body>
 </html>

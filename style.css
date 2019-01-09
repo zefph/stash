@@ -3,6 +3,12 @@
 		width: 50px;
 	}
 
+	p {
+		font-family: 'Lato', sans-serif;
+		font-size: 12px;
+		display: inline-block;
+	}
+
 
   /* Set the size of the div element that contains the map */
   #map {
@@ -15,44 +21,134 @@
 
    }
 
+  
+
    .button {
-   width:200px;
+      width:200px;
 		height:40px;
 		background:#B8AC4A;
 		margin-left: 50px;
-		margin-top: 150px;
+		margin-top: 50px;
 		z-index: 3;
 		position: absolute;
-		border-radius: 30px;
+		border-radius: 10px;
+		text-align: center;
+		box-shadow: 1px 1px 12px #555;
    }
 
-   .button p {
-
-		font-family: 'Lato', sans-serif;
-		font-size: 16px;
-		margin-left: 55px;
-		color: white;
-	
-
+    .button p  {
+   		color: white;
    }
+
+   .trier {
+      width:200px;
+		height:40px;
+		background:#B8AC4A;
+		margin-left: 50px;
+		margin-top: 10px;
+		z-index: 3;
+		position: absolute;
+		border-radius: 10px;
+		text-align: center;
+		box-shadow: 1px 1px 12px #555;
+   }
+
+    .trier p  {
+   		color: white;
+   }
+
+
 
    #panneaugauche {
 		width:500px;
-		height:650px;
-		background:#B8AC4A;
+		height:647px;
+		background: white;
 		position: absolute;
  		z-index: 2;
+ 		border-style:  solid hidden solid;
+ 		border-color: #f4f4f4;
 	
 	}
 
+		.rond1 , .rond2, .rond3 p{
+		color: white ;
+		margin-bottom: 30px;
 
+	
+		}
+
+     .rond1 {
+			margin-top: 30px;
+			z-index: 5;
+		}
+
+		.bienvenue p{
+			color: white;
+		}
+
+		.bienvenue {
+			
+		width:200px;
+		height:40px;
+		background:#C87238;
+		margin-left: 50px;
+		margin-top: 20px;
+		z-index: 2;
+		position: absolute;
+		border-radius: 10px;
+		text-align: center;
+		box-shadow: 1px 1px 12px #555;
+		}
+
+
+ 	.rond1 {
+ 		width: 50px;
+ 		height: 50px;
+		 display:inline-block;
+		 border-radius:50%;
+ 		text-align:center;
+ 		margin-left: 20px;
+		background-color: #B45B31 ;
+ 	}
+
+ 		.rond2 {
+ 		width: 50px;
+ 		height: 50px;
+		 display:inline-block;
+		 border-radius:50%;
+ 		text-align:center;
+		margin-left: 20px;
+		background-color: #9C9144 ;
+ 	}
+
+
+	.rond3 {
+ 		width: 50px;
+ 		height: 50px;
+		 display:inline-block;
+		 border-radius:50%;
+ 		text-align:center;
+ 		margin-left: 20px;
+		background-color: #B8AC4A ;
+ 	}
+
+
+   .favori img {
+   
+    width: 20px;
+    height: 20px;
+   
+    margin-top: 8px;
+    z-index: 4
+   }
 
 
 	#hider {
 		width: 20px;
 		height: 20px;
 		margin-right: 20px;
-		margin-left: 200px;
+		margin-left: 225px;
+		margin-top: 10px;
 
 	}
 
@@ -60,20 +156,23 @@
 	
 		width: 20px;
 		height: 20px;
+		margin-top: 10px;
 	
 
 	}
 
 
 	.recherche{
-		width:200px;
+		width:300px;
 		height:40px;
-		background: white;
+		background: #f4f4f4;
 		margin-right: auto;
 		margin-left: auto;
 		margin-top: 30px;
 		z-index: 3;
-		border-radius: 30px;
+		border-radius: 5px;
+		text-align: center;
+		box-shadow: 1px 1px 12px #CACFD2;
 	}
 
 
@@ -88,36 +187,21 @@
 
 	.petitpanneau{
 		width:300px;
-		height:350px;
-		background: white;
+		height:480px;
+		background: #f4f4f4;
 		margin-right: auto;
 		margin-left: auto;
 		margin-top: 30px;
 		z-index: 3;
+		border-radius: 5px;
 	}
 
 
-	.texterecherche {
-		z-index: 3;
-		font-family: 'Lato', sans-serif;
-		font-size: 14px;
-		margin-left: 15px;
-		color: grey;
-		padding-top:1px;
 
-
-
-	}
+		.baseline p{
 		
-	.baseline {
-		z-index: 2;
-		font-family: 'Lato', sans-serif;
-		font-size: 14px;
-		color: black;
-		text-align: center;
-	
-
-
+		margin-top: 75px;
+		margin-left: 75px;
 
 	}
 
@@ -127,6 +211,167 @@
    
   }
 
+  	.tri1 {
+  		width:200px;
+		height:40px;
+		background: white;
+		margin-left: 40px;
+		margin-top: 10px;
+		z-index: 3;
+		text-align: left;
+		border-radius: 10px;
+		box-shadow: 1px 1px 12px #CACFD2;
+  	}
+  	.tri2 {
+		width:200px;
+		height:40px;
+		background: white;
+		margin-left: 40px;
+		margin-top: 20px;
+		z-index: 3;
+		text-align: left;
+		border-radius: 10px;
+		box-shadow: 1px 1px 12px #CACFD2;
+  	}
+  	.tri3 {
+		width:200px;
+		height:40px;
+		background: white;
+		margin-left: 40px;
+		margin-top: 10px;
+		z-index: 3;
+		text-align: left;
+		border-radius: 10px;
+		box-shadow: 1px 1px 12px #CACFD2;	
+  	}
 
 
-  
+  .tri1, .tri2, .tri3   {
+  		color: #C87238;
+  		padding-left: 20px;
+  }
+
+  .texte {
+  	text-align: center;
+  }
+
+  .trierpar p {
+margin-left: 40px;
+ }
+
+
+ .recherche img  {
+ 	width: 20px;
+ 	height: 20px;
+ 	margin-left: 80px;
+ }
+
+.tri1 img  {
+width: 20px;
+height: 20px;
+margin-left: 120px;
+}
+
+.tri2 img  {
+width: 20px;
+height: 20px;
+margin-left: 10px;	
+}
+
+.tri3 img  {
+width: 20px;
+height: 20px;
+margin-left: 125px;
+
+}
+
+.image img {
+	width: 150px;
+	height: 100px;
+	margin-left: 75px;
+	margin-top: 10px;
+	box-shadow: 1px 1px 12px #CACFD2;
+	}
+
+h1 {
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	text-align: center;
+	margin-top: 5px!important;
+	margin-bottom: 5px!important;
+}
+
+.genre p {
+	font-family: 'Lato', sans-serif;
+	font-size: 12px;
+	text-align: center;
+	margin-left:100px;
+	margin-top: 5px!important;
+	margin-bottom: 5px!important;
+}
+
+
+.adresse {
+	    width:250px;
+		height:30px;
+		background: white;
+		margin-left: 25px;
+		margin-top: 5px;
+		z-index: 3;
+		text-align: left;
+		border-radius: 10px;
+		box-shadow: 1px 1px 12px #CACFD2;
+		text-align: left;
+}
+
+.horaires {
+	    width:250px;
+		height:50px;
+		background: white;
+		margin-left: 25px;
+		margin-top: 5px;
+		z-index: 3;
+		text-align: left;
+		border-radius: 10px;
+		box-shadow: 1px 1px 12px #CACFD2;
+		text-align: left;
+}
+
+.coordonnées {
+	    width:250px;
+		height:110px;
+		background: white;
+		margin-left: 25px;
+		margin-top: 5px;
+		z-index: 3;
+		text-align: left;
+		border-radius: 10px;
+		box-shadow: 1px 1px 12px #CACFD2;
+		text-align: left;
+}
+
+.coordonnées p {
+	margin-left: 5px;
+}
+
+.adresse p {
+	margin-left: 5px;
+}
+
+.horaires p {
+	margin-left: 5px;
+}
+
+#conteneur2 {
+	display: flex;
+	justify-content: space-around;
+}
+
+.retour img {
+	width: 20px;
+    height: 20px;
+   
+    margin-top: 8px;
+    z-index: 4
+
+}

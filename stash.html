@@ -26,20 +26,29 @@
 
     <span id="panneaugauche">   
         <div class="logo"><img src="stash.png"></div>
-        <div class="baseline">
-        <p>"Faîtes vos réserves de lecture"</p>
-        </div>
-
-        <div class="recherche">
-        <div class="texterecherche">
-        <p>Rechercher une librairie...</p>
-        </div>
-        </div>
+        
 
         <div class="petitpanneau">
+
+          <div class="bienvenue">
+            <p><b>Bienvenue sur STASH</b></p>
+          </div>
+
+            <div class="baseline"><p><i>"Ici insérer une baseline"</i></p></div>
+             
+            <div class="rond1"> <p>1</p></div>
+            <p>Localisez des librairies</p>
+            <br>
+            <div class="rond2"><p>2</p></div>
+            <p>Triez en fonction de vos attentes</p>
+            <br>
+            <div class="rond3"><p>3</p></div>
+            <p>Consultez les fiches</p>
+            <br>
+         
           <a href="trier.html"><div class="button">
-            <p>Commencer</p>
-          </div></a>
+            <p>Partir à l'aventure</p>
+          </div><a>
         </div>
     </span>
 
@@ -47,7 +56,7 @@
 
         $( "#hider" ).click(function() {
           $( "#panneaugauche" ).hide( "fast", function() {
-
+            // Use arguments.callee so we don't need a named function
             $( this ).prev().hide( "fast" );
           });
         });
@@ -56,19 +65,22 @@
         });
 
     </script>
-       
+
+
+     
   </div>
 
-      <div class="panneaudroite">
+    <div class="panneaudroite">
+  <div class="map"></div>
 
-        <div class="map"></div>
+  <script src="app.js"></script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDV0Pfm_J4_pEmWxnTAmzJiyXG-eOyjUs8&callback=initMap">
+  </script>
 
-        <script src="app.js"></script>
-        <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDV0Pfm_J4_pEmWxnTAmzJiyXG-eOyjUs8&callback=initMap">
-        </script>
+    </div>
 
-      </div>
 
 </body>
 </html>
+
