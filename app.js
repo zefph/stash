@@ -125,24 +125,13 @@ function initMap() {
 
   // Create the map.
   const map = new google.maps.Map(document.getElementsByClassName('map')[0], {
-    zoom: 7,
+    zoom: 10,
     center: {lat: 44.839783, lng: -0.572300}, 
     styles: mapStyle
   });
 
   // Load the stores GeoJSON onto the map.
   map.data.loadGeoJson('mapmarkers.json');
-
-  // Define the custom marker icons, using the store's "category".
-
-  /*map.data.setStyle(feature => {
-    return {
-      icon: {
-        url: `img/icon_${feature.getProperty('category')}.png`,
-        scaledSize: new google.maps.Size(64, 64)
-      }
-    };
-  });*/
 
   const apiKey = 'AIzaSyDV0Pfm_J4_pEmWxnTAmzJiyXG-eOyjUs8';
   const infoWindow = new google.maps.InfoWindow();
