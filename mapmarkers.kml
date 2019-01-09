@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="mapmarkers" id="mapmarkers">
+	<SimpleField name="id" type="string"></SimpleField>
+	<SimpleField name="address" type="string"></SimpleField>
+	<SimpleField name="horaires" type="string"></SimpleField>
+	<SimpleField name="mail" type="string"></SimpleField>
+	<SimpleField name="phone" type="string"></SimpleField>
+	<SimpleField name="website" type="string"></SimpleField>
+	<SimpleField name="genre" type="string"></SimpleField>
+</Schema>
+<Folder><name>mapmarkers</name>
+  <Placemark>
+	<name>La Zone du Dehors</name>
+	<description>café et ludothèque</description>
+	<ExtendedData><SchemaData schemaUrl="#mapmarkers">
+		<SimpleData name="id">1</SimpleData>
+		<SimpleData name="address">68 cours Victor Hugo 33000 Bordeaux</SimpleData>
+		<SimpleData name="horaires">mardi - samedi: 10h30 - 19h30 // dimanche: 13h - 19h30</SimpleData>
+		<SimpleData name="mail">contact@lazonedudehors.fr</SimpleData>
+		<SimpleData name="phone">09 82 23 27 78</SimpleData>
+		<SimpleData name="website">http://lazonedudehors.fr</SimpleData>
+		<SimpleData name="genre">généraliste</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-0.569314,44.835191</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Comptine</name>
+	<description>vente de jouets et jeux pour enfants</description>
+	<ExtendedData><SchemaData schemaUrl="#mapmarkers">
+		<SimpleData name="id">2</SimpleData>
+		<SimpleData name="address">5 rue Duffour-Dubergier 33000 Bordeaux</SimpleData>
+		<SimpleData name="horaires">mardi - vendredi: 10h30 - 19h // samedi: 10h - 19h</SimpleData>
+		<SimpleData name="mail"></SimpleData>
+		<SimpleData name="phone">05 56 44 55 56</SimpleData>
+		<SimpleData name="website">http://librairiecomptines.hautetfort.com</SimpleData>
+		<SimpleData name="genre">jeunesse</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-0.576257,44.837016</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Bradley's Book Shop</name>
+	<description>café et aire de jeu pour enfant</description>
+	<ExtendedData><SchemaData schemaUrl="#mapmarkers">
+		<SimpleData name="id">3</SimpleData>
+		<SimpleData name="address">1 Rue de la Merci 33000 Bordeaux</SimpleData>
+		<SimpleData name="horaires">mardi - samedi: 10h - 19h</SimpleData>
+		<SimpleData name="mail">livres@bradleys-bookshop.com</SimpleData>
+		<SimpleData name="phone">05 56 52 10 57</SimpleData>
+		<SimpleData name="website">http://www.bradleys-bookshop.com/index.html</SimpleData>
+		<SimpleData name="genre">littérature anglophone</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-0.573307,44.839005</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Krazy Kat</name>
+	<description>café</description>
+	<ExtendedData><SchemaData schemaUrl="#mapmarkers">
+		<SimpleData name="id">4</SimpleData>
+		<SimpleData name="address">10 Rue de la Merci 33000 Bordeaux</SimpleData>
+		<SimpleData name="horaires">lundi: 14h - 19h // mardi - vendredi: 10h - 19h // samedi: 10h30 - 19h</SimpleData>
+		<SimpleData name="mail">krazykatlib@canalbd.net</SimpleData>
+		<SimpleData name="phone">05 56 52 16 60</SimpleData>
+		<SimpleData name="website">http://www.canalbd.net/krazy-kat</SimpleData>
+		<SimpleData name="genre">bd, comics, manga</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-0.573666,44.838818</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Mollat</name>
+	<description>plus grande librairie indépendante de france</description>
+	<ExtendedData><SchemaData schemaUrl="#mapmarkers">
+		<SimpleData name="id">5</SimpleData>
+		<SimpleData name="address">15 Rue Vital Carles, 33080 Bordeaux</SimpleData>
+		<SimpleData name="horaires">lundi - samedi: 9h30 - 19h30</SimpleData>
+		<SimpleData name="mail">krazykatlib@canalbd.net</SimpleData>
+		<SimpleData name="phone">05 56 56 40 40</SimpleData>
+		<SimpleData name="website">https://www.mollat.com</SimpleData>
+		<SimpleData name="genre">généraliste</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-0.578614,44.840843</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>
