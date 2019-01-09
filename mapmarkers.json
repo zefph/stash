@@ -1,0 +1,78 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+     {
+        "geometry": {
+        	"type": "Point",
+        	"coordinates": [
+        		-0.569314,
+        		44.835191
+        	]
+        },
+
+        "type": "Feature",
+        "properties": {
+	        "id": "1",
+	        "name": "La Zone du Dehors",
+	        "address": "68 cours Victor Hugo 33000 Bordeaux",
+	        "horaires": "mardi - samedi: 10h30 - 19h30 // dimanche: 13h - 19h30",
+	        "mail": "contact@lazonedudehors.fr",
+	        "phone": "09 82 23 27 78",
+	        "website": "http://lazonedudehors.fr",
+	        "description": "café et ludothèque",
+	        "genre": "généraliste"
+      	}
+    },
+      {
+        "id": "2",
+        "name": "Comptine",
+        "address": "5 rue Duffour-Dubergier 33000 Bordeaux",
+        "horaires": "mardi - vendredi: 10h30 - 19h // samedi: 10h - 19h",
+        "phone": "05 56 44 55 56",
+        "website": "http://librairiecomptines.hautetfort.com",
+        "lat": "44.837016",
+        "lng": "-0.576257",
+        "description": "vente de jouets et jeux pour enfants",
+        "genre": "jeunesse"
+      },
+      {
+        "id": "3",
+        "name": "Bradley's Book Shop",
+        "address": "1 Rue de la Merci 33000 Bordeaux",
+        "horaires": "mardi - samedi: 10h - 19h",
+        "mail": "livres@bradleys-bookshop.com",
+        "phone": "05 56 52 10 57",
+        "website": "http://www.bradleys-bookshop.com/index.html",
+        "lat": "44.839005",
+        "lng": "-0.573307",
+        "description": "café et aire de jeu pour enfant",
+        "genre": "littérature anglophone"
+      },
+      {
+        "id": "4",
+        "name": "Krazy Kat",
+        "address": "10 Rue de la Merci 33000 Bordeaux",
+        "horaires": "lundi: 14h - 19h // mardi - vendredi: 10h - 19h // samedi: 10h30 - 19h",
+        "mail": "krazykatlib@canalbd.net",
+        "phone": "05 56 52 16 60",
+        "website": "http://www.canalbd.net/krazy-kat",
+        "lat": "44.838818",
+        "lng": "-0.573666",
+        "description": "café",
+        "genre": "bd, comics, manga"
+      },
+      {
+        "id": "5",
+        "name": "Mollat",
+        "address": "15 Rue Vital Carles, 33080 Bordeaux",
+        "horaires": "lundi - samedi: 9h30 - 19h30",
+        "phone": "05 56 56 40 40",
+        "website": "https://www.mollat.com",
+        "lat": "44.840843",
+        "lng": "-0.578614",
+        "description": "plus grande librairie indépendante de france",
+        "genre": "généraliste"
+      }
+    ]
+  }
+}
