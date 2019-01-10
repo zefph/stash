@@ -150,3 +150,5 @@ function initMap() {
   });
 
 }
+    var markerInfo = "<div><h3>" + genre + "</h3>description: " + description + "</div>"
+
