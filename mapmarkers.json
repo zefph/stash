@@ -115,30 +115,6 @@
           "description": "plus grande librairie indépendante de france",
           "genre": "généraliste"
         }
-    }
-	  
-    {
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            -0.568179,
-	    44.831873
-          ]
-        },
-
-        "type": "Feature",
-        "properties": {
-          "id": "6",
-          "name": "Disparate",
-          "address": "31 rue Bergeret, 33000 Bordeaux",
-          "horaires": "mercredi - samedi: 15h - 19h",
-          "mail": "",
-          "phone": "",
-          "website": "www.disparate.fr",
-          "description": "fanzinothèque",
-          "genre": "fanzine, livre d'art"
-        }
-    }
-    
+    }    
    ]
 }
