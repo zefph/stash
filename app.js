@@ -149,7 +149,7 @@ function initMap() {
     infoWindow.open(map);
   });
 
-    var markerInfo = "<div><h3>" + genre + titleText + descriptionText"</h3>description: " + description + "</div>"
+    var markerInfo = "<div><h3>" + titleText + descriptionText"</h3>description: " + description + "</div>"
 
 
     marker.addListener('click', function() {
