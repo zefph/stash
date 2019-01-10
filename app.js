@@ -137,18 +137,17 @@ function initMap() {
     const genre = event.feature.getProperty('genre');
     const position = event.feature.getGeometry().get();
     const content = sanitizeHTML`
+      <img style="float:left; width:200px; margin-top:30px" src="img/logo_${category}.png">
       <div style="margin-left:220px; margin-bottom:20px;">
         <h2>${name}</h2><p>${description}</p>
-        <p><b>Open:</b> ${horaires}<br/><b>Phone:</b> ${phone}<br/><b>Mail:</b> ${mail}</p>
+        <p><b>Open:</b> ${hours}<br/><b>Phone:</b> ${phone}</p>
         <p><img src="https://maps.googleapis.com/maps/api/streetview?size=350x120&location=${position.lat()},${position.lng()}&key=${apiKey}"></p>
       </div>
     `;
 
-    infoWindow.setContent(markerInfo);
+    infoWindow.setContent(content);
     infoWindow.setPosition(position);
     infoWindow.open(map);
   });
 
 }
-    var markerInfo = "<div><h3>" + genre + "</h3>description: " + description + "</div>"
-
