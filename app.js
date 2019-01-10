@@ -149,12 +149,12 @@ function initMap() {
     infoWindow.open(map);
   });
 
-    var markerInfo = "<div><h3>" + titleText + descriptionText"</h3>description: " + description + "</div>"
+}
+
+    var markerInfo = "<div><h3>" + genre + "</h3>description: " + description + "</div>"
 
 
     marker.addListener('click', function() {
            $('#library_info').html(markerInfo)
         });
         markers.push(marker)
-
-}
