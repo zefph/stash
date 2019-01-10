@@ -116,28 +116,6 @@
           "genre": "généraliste"
         }
     }
-
-    {
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            -0.678614,
-            45.840843        
-          ]
-        },
-
-        "type": "Feature",
-        "properties": {
-          "id": "5",
-          "name": "Mollat",
-          "address": "15 Rue Vital Carles, 33080 Bordeaux",
-          "horaires": "lundi - samedi: 9h30 - 19h30",
-          "mail": "krazykatlib@canalbd.net",
-          "phone": "05 56 56 40 40",
-          "website": "https://www.mollat.com",
-          "description": "plus grande librairie indépendante de france",
-          "genre": "généraliste"
-        }
-    }
+    
    ]
 }
