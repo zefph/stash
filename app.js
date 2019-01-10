@@ -137,11 +137,10 @@ function initMap() {
     const genre = event.feature.getProperty('genre');
     const position = event.feature.getGeometry().get();
     const content = sanitizeHTML`
-      <div style="margin-left:220px; margin-bottom:20px;">
+      <div style="margin-left:20px; margin-bottom:20px; background-color: red;">
         <h2>${name}</h2><br/>
         <p>${description}</p>
         <p><b>Open:</b> ${horaires}<br/><b>Phone:</b> ${phone}<br/><b>Mail:</b> ${mail}</p>
-        <p><img src="https://maps.googleapis.com/maps/api/streetview?size=350x120&location=${position.lat()},${position.lng()}&key=${apiKey}"></p>
       </div>
     `;
 
@@ -154,6 +153,9 @@ function initMap() {
 
 
    /* var markerInfo = "<div><h3>" + genre + "</h3>description: " + description + "</div>"
+
+      // Affichage d'une image dans le sanitizeHTML
+        <p><img src="https://maps.googleapis.com/maps/api/streetview?size=350x120&location=${position.lat()},${position.lng()}&key=${apiKey}"></p>
 
 
     marker.addListener('click', function() {
