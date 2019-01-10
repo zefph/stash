@@ -93,16 +93,6 @@ const mapStyle = [
   }
 ];
 
-$.each(data, function(key, val) {
-var markerInfo = "<div><h3>" + genre + "</h3>description: " + description + "</div>"
-
-
-marker.addListener('click', function() {
-           $('#library_info').html(markerInfo)
-    });
-markers.push(marker) 
-})
-
 
 // Escapes HTML characters in a template literal string, to prevent XSS.
 // See https://www.owasp.org/index.php/XSS_%28Cross_Site_Scripting%29_Prevention_Cheat_Sheet#RULE_.231_-_HTML_Escape_Before_Inserting_Untrusted_Data_into_HTML_Element_Content
@@ -157,8 +147,9 @@ function initMap() {
       </div>
     `;
 
-    markerInfo.setContent(content);
-    
+    infoWindow.setContent(content);
+    infoWindow.setPosition(position);
+    infoWindow.open(map);
   });
 
 }
@@ -171,7 +162,7 @@ function initMap() {
 
     marker.addListener('click', function() {
            $('#library_info').html(markerInfo)
-    });
+        });
     markers.push(marker) 
 
 
