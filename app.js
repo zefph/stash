@@ -138,7 +138,8 @@ function initMap() {
     const description = event.feature.getProperty('description');
     const genre = event.feature.getProperty('genre');
     const position = event.feature.getGeometry().get();
-    const content = sanitizeHTML`
+    const content = 
+    `
       <div style="margin-left:20px; margin-bottom:20px;">
         <h2>${name}</h2><br/>
         <p>${description}<br/>
