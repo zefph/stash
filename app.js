@@ -138,7 +138,8 @@ function initMap() {
     const position = event.feature.getGeometry().get();
     const content = sanitizeHTML`
       <div style="margin-left:220px; margin-bottom:20px;">
-        <h2>${name}</h2><p>${description}</p>
+        <h2>${name}</h2><br/>
+        <p>${description}</p>
         <p><b>Open:</b> ${horaires}<br/><b>Phone:</b> ${phone}<br/><b>Mail:</b> ${mail}</p>
         <p><img src="https://maps.googleapis.com/maps/api/streetview?size=350x120&location=${position.lat()},${position.lng()}&key=${apiKey}"></p>
       </div>
