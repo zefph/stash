@@ -137,7 +137,7 @@ function initMap() {
     const genre = event.feature.getProperty('genre');
     const position = event.feature.getGeometry().get();
     const content = sanitizeHTML`
-      <div style="margin-left:20px; margin-bottom:20px; background-color: red;">
+      <div style="margin-left:20px; margin-bottom:20px;">
         <h2>${name}</h2><br/>
         <p>${description}<br/>
         <b>Open:</b> ${horaires}<br/>
