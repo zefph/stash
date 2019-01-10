@@ -116,6 +116,29 @@
           "genre": "généraliste"
         }
     }
+	  
+    {
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -0.568173200000047,
+            44.8318437        
+          ]
+        },
+
+        "type": "Feature",
+        "properties": {
+          "id": "6",
+          "name": "Disparate",
+          "address": "31 rue Bergeret, 33000 Bordeaux",
+          "horaires": "mercredi - samedi: 15h - 19h",
+          "mail": "",
+          "phone": "",
+          "website": "www.disparate.fr",
+          "description": "fanzinothèque",
+          "genre": "fanzine, livre d'art"
+        }
+    }
     
    ]
 }
