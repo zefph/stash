@@ -157,9 +157,8 @@ function initMap() {
       </div>
     `;
 
-    infoWindow.setContent(content);
-    infoWindow.setPosition(position);
-    infoWindow.open(map);
+    markerInfo.setContent(content);
+    
   });
 
 }
