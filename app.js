@@ -144,9 +144,17 @@ function initMap() {
       </div>
     `;
 
-    infoWindow.setContent(content);
+    infoWindow.setContent(markerInfo);
     infoWindow.setPosition(position);
     infoWindow.open(map);
   });
+
+    var markerInfo = "<div><h3>" + id + "</h3>description: " + description + "</div>"
+
+
+    marker.addListener('click', function() {
+           $('#library_info').html(markerInfo)
+        });
+        markers.push(marker)
 
 }
