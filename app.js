@@ -93,6 +93,17 @@ const mapStyle = [
   }
 ];
 
+$.each(data, function(key, val) {
+var markerInfo = "<div><h3>" + genre + "</h3>description: " + description + "</div>"
+
+
+marker.addListener('click', function() {
+           $('#library_info').html(markerInfo)
+    });
+markers.push(marker) 
+}
+
+
 // Escapes HTML characters in a template literal string, to prevent XSS.
 // See https://www.owasp.org/index.php/XSS_%28Cross_Site_Scripting%29_Prevention_Cheat_Sheet#RULE_.231_-_HTML_Escape_Before_Inserting_Untrusted_Data_into_HTML_Element_Content
 function sanitizeHTML(strings) {
@@ -154,13 +165,18 @@ function initMap() {
 }
 
 
-   /* var markerInfo = "<div><h3>" + genre + "</h3>description: " + description + "</div>"
+/* 
 
-      // Affichage d'une image dans le sanitizeHTML
-        <p><img src="https://maps.googleapis.com/maps/api/streetview?size=350x120&location=${position.lat()},${position.lng()}&key=${apiKey}"></p>
+   var markerInfo = "<div><h3>" + genre + "</h3>description: " + description + "</div>"
 
 
     marker.addListener('click', function() {
            $('#library_info').html(markerInfo)
-        });
-        markers.push(marker) */
+    });
+    markers.push(marker) 
+
+
+        // Affichage d'une image dans le sanitizeHTML
+        <p><img src="https://maps.googleapis.com/maps/api/streetview?size=350x120&location=${position.lat()},${position.lng()}&key=${apiKey}"></p>
+
+*/
