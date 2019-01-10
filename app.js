@@ -139,8 +139,10 @@ function initMap() {
     const content = sanitizeHTML`
       <div style="margin-left:20px; margin-bottom:20px; background-color: red;">
         <h2>${name}</h2><br/>
-        <p>${description}</p>
-        <p><b>Open:</b> ${horaires}<br/><b>Phone:</b> ${phone}<br/><b>Mail:</b> ${mail}</p>
+        <p>${description}<br/>
+        <b>Open:</b> ${horaires}<br/>
+        <b>Phone:</b> ${phone}<br/>
+        <b>Mail:</b> ${mail}</p>
       </div>
     `;
 
