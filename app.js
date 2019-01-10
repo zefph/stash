@@ -101,7 +101,7 @@ marker.addListener('click', function() {
            $('#library_info').html(markerInfo)
     });
 markers.push(marker) 
-}
+})
 
 
 // Escapes HTML characters in a template literal string, to prevent XSS.
