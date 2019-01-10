@@ -150,11 +150,3 @@ function initMap() {
   });
 
 }
-
-    var markerInfo = "<div><h3>" + genre + "</h3>description: " + description + "</div>"
-
-
-    marker.addListener('click', function() {
-           $('#library_info').html(markerInfo)
-        });
-        markers.push(marker)
